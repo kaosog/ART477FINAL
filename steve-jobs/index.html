@@ -5,11 +5,11 @@
 <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<script type="text/javascript" src="../../extras/jquery.min.1.7.js"></script>
-<script type="text/javascript" src="../../extras/jquery-ui-1.8.20.custom.min.js"></script>
-<script type="text/javascript" src="../../extras/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="../../extras/modernizr.2.5.3.min.js"></script>
-<script type="text/javascript" src="../../lib/hash.js"></script>
+<script type="text/javascript" src="extras/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="extras/jquery-ui-1.8.20.custom.min.js"></script>
+<script type="text/javascript" src="extras/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
+<script type="text/javascript" src="extras/hash.js"></script>
 </head>
 <body>
 
@@ -18,10 +18,7 @@
 		<div class="sj-book">
 			<div depth="5" class="hard"> <div class="side"></div> </div>
 			<div depth="5" class="hard front-side"> <div class="depth"></div> </div>
-			<div class="own-size"></div>
-			<div class="own-size even"></div>
-			<div class="hard fixed back-side p111"> <div class="depth"></div> </div>
-			<div class="hard p112"></div>
+
 		</div>
 	</div>
 	<div id="slider-bar" class="turnjs-slider">
@@ -83,7 +80,7 @@ function loadApp() {
 
 	$( "#slider" ).slider({
 		min: 1,
-		max: 100,
+		max: 10,
 
 		start: function(event, ui) {
 
@@ -167,7 +164,7 @@ function loadApp() {
 		autoCenter: true,
 		gradients: true,
 		duration: 1000,
-		pages: 112,
+		pages: 10,
 		when: {
 			turning: function(e, page, view) {
 				
@@ -280,8 +277,8 @@ $('#canvas').css({visibility: 'hidden'});
 
 yepnope({
 	test : Modernizr.csstransforms,
-	yep: ['../../lib/turn.min.js'],
-	nope: ['../../lib/turn.html4.min.js', 'css/jquery.ui.html4.css', 'css/steve-jobs-html4.css'],
+	yep: ['../turnPage/turn.min.js'],
+	nope: ['../turnPage/turn.html4.min.js', 'css/jquery.ui.html4.css', 'css/steve-jobs-html4.css'],
 	both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
 	complete: loadApp
 });
