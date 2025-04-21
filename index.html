@@ -1,144 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- jQuery (required by Turn.js) -->
+  <meta charset="UTF-8">
+  <title>Interactive Flipbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-  <!-- Turn.js -->
-  <script src="turn.min.js"></script>
-
-  <!-- Optional: Turn.js HTML4 fallback -->
-  <script src="turn.html4.min.js"></script>
-
-  <!-- Optional: Zoom support -->
-  <script src="zoom.min.js"></script>
-
-  <!-- Optional: Scissor (for cutting pages into parts) -->
-  <script src="scissor.min.js"></script>
-
-  <style type="text/css">
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      background: #ccc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #book {
-      width: 1200px;
-      height: 700px;
-    }
-
-    #book .turn-page {
-      background-color: #B9AE8F;
-    }
-
-    #book .cover {
-      background: #333;
-    }
-
-    #book .cover h1 {
-      color: white;
-      text-align: center;
-      font-size: 50px;
-      line-height: 700px;
-      margin: 0;
-    }
-
-    #book .data {
-      text-align: center;
-      font-size: 40px;
-      color: #999;
-      line-height: 700px;
-    }
-
-	.book-container {
-		position: relative;
-		width: 800px;   /* match book width */
-		height: 500px;  /* match book height */
-		margin: 40px auto;
-		}
-
-		.left-bind, .right-bind {
-		position: absolute;
-		top: 0;
-		height: 100%;
-		z-index: 2; /* above book pages */
-		pointer-events: none; /* let clicks pass through */
-		}
-
-		.left-bind {
-			z-index: 2;
-		left: 0;
-		}
-
-		.right-bind {
-			z-index: 2;
-		right: 0;
-		}
-
-  </style>
+  <script src="turnPage/turn.min.js"></script>
+  <script src="turnPage/turn.html4.min.js"></script>
+  <script src="turnPage/zoom.min.js"></script>
+  <script src="turnPage/scissor.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-<div class="book-container">
-	<img src="images/leftBind.png" class="left-bind">
-	<div id="book">
-	</div>
-	<img src="images/rightBind.png" class="right-bind">
-	</div>
+  <div class="book-container">
+    <!-- <img src="images/leftBind.png" class="left-bind" alt="Left Binding"> -->
+    <div id="book"></div>
+    <!-- <img src="images/rightBind.png" class="right-bind" alt="Right Binding"> -->
+  </div>
+  <div class="book-controls">
+    <input type="range" id="page-slider" min="1" max="10" value="1">
+    <span id="page-display">Page 1</span>
+  </div>
+  
 
-<script type="text/javascript">
-  for (let i = 1; i <= 10; i++) {
-    $('#book').append(`<div class="page" id="page${i}"></div>`);
-    $(`#page${i}`).load(`page${i}.html`);
-  }
-
-  $(document).ready(function () {
-    $('#book').turn({
-      width: 1200,
-      height: 700,
-      autoCenter: true
-    });
-
-    $(window).on('keydown', function (e) {
-      if (e.target && e.target.tagName.toLowerCase() !== 'input') {
-        if (e.keyCode === 37) $('#book').turn('previous');
-        else if (e.keyCode === 39) $('#book').turn('next');
-      }
-    });
-
-    $('#page-number').on('change', function () {
-      const page = parseInt($(this).val());
-      $('#book').turn('page', page);
-    });
-  });
-
-  $('#book').on('click', function (e) {
-    const offset = $(this).offset();
-    const width = $(this).width();
-    const clickX = e.pageX - offset.left;
-
-    if (clickX < width / 2) {
-      $(this).turn('previous');
-    } else {
-      $(this).turn('next');
-    }
-  });
-
-  $('#book').on('wheel', function (e) {
-    e.preventDefault();
-    const delta = e.originalEvent.deltaY;
-    if (delta > 0) {
-      $(this).turn('next');
-    } else {
-      $(this).turn('previous');
-    }
-  });
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
