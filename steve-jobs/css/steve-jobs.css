@@ -62,7 +62,6 @@
   .sj-book .book-content{
 	  font-family: "Stempel-Garamond-W01-Roman";
 	  font-size:16px;
-	  margin:70px 40px;
   }
   
   .sj-book blockquote{
@@ -164,7 +163,6 @@
   
   .sj-book .p1,
   .sj-book .p2,
-  .sj-book .p3, 
   .sj-book .p11, 
   .sj-book .p12{
 	  background-color:white;
@@ -231,9 +229,6 @@
 	  background-position:-480px 0 !important;
   }
   
-  .sj-book .p3{
-	  background-position:-1920px 0 !important;
-  }
   
   .sj-book .p11{
 	  background-position:-960px 0 !important;
@@ -268,8 +263,8 @@
   }
   
   .sj-book .even{
-	  background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
-	  background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+	  background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #B9AE8F), color-stop(1, #978e75));
+	  background-image:-webkit-linear-gradient(left, #B9AE8F 95%, #978e75 100%);
 	  background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
 	  background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
 	  background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
@@ -277,8 +272,8 @@
   }
   
   .sj-book .odd{
-	  background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
-	  background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+	  background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #B9AE8F), color-stop(1, #9c937a));
+	  background-image:-webkit-linear-gradient(right, #B9AE8F 95%, #978e75 100%);
 	  background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
 	  background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
 	  background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
@@ -361,14 +356,14 @@
   
   .ie8 .sj-book .even,
   .ie9 .sj-book .even{
-	  background-image:url(../pics/gradient-page-left.jpg);
+	  background-image:url(../pics/gradient-page-left.png);
 	  background-position:right top;
 	  background-repeat:repeat-y;
   }
   
   .ie8 .sj-book .odd,
   .ie9 .sj-book .odd{
-	  background-image:url(../pics/gradient-page-right.jpg);
+	  background-image:url(../pics/gradient-page-right.png);
 	  background-position:left top;
 	  background-repeat:repeat-y;
   }

@@ -1,4 +1,23 @@
-/* Reset and base styles */
+#bothBind{
+  position: absolute;
+  left: 20%;
+  z-index: 100;
+}
+
+#canvas{
+  position:relative
+}
+#rightBind{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+#leftBind{
+  position:absolute;
+  top:-10px;
+  left:0px;
+}
+/* Reset and base styles
 html, body {
   height: 100%;
   margin: 0;
@@ -8,7 +27,7 @@ html, body {
 }
 
 /* Book container */
-.book-container {
+/* .book-container {
   position: relative;
   width: 1200px;
   height: 700px;
@@ -20,19 +39,19 @@ html, body {
 }
 
 /* Book core */
-#book {
+/* #book {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* Flip pages */
-#book .turn-page {
+/* #book .turn-page {
   background-color: #fafafa;
   border: 1px solid #ddd;
-}
+} */
 
 /* Covers */
-#book .cover {
+/* #book .cover {
   background: #2c3e50;
 }
 
@@ -43,26 +62,26 @@ html, body {
   line-height: 700px;
   margin: 0;
   font-weight: 300;
-}
+} */
 
 /* Page content */
-#book .data {
+/* #book .data {
   text-align: center;
   font-size: 36px;
   color: #555;
   line-height: 700px;
-}
+} */
 
 /* Binding images */
-.left-bind, .right-bind {
+/* .left-bind, .right-bind {
   position: absolute;
   top: 0;
   height: 100%;
   z-index: 2;
   pointer-events: none;
-}
+} */
 
-.left-bind {
+/* .left-bind {
   left: 0;
 }
 
@@ -89,4 +108,4 @@ html, body {
 #page-slider {
   width: 300px;
   margin-right: 15px;
-}
+} */ */ */

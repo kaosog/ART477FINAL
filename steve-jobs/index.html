@@ -10,10 +10,13 @@
 <script type="text/javascript" src="extras/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script>
 <script type="text/javascript" src="extras/hash.js"></script>
+<link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-
+	<!-- <img src="../images/leftBind.png" alt="Description of the image" width="auto" height="582">
+	<img src="../images/rightBind.png" alt="Description of the image" width="auto" height="582"> -->
 <div id="canvas">
+	<!-- <img id ="bothBind" src="../images/both.png" alt="Description of the image" width="auto" height="582"> -->
 	<div id="book-zoom">
 		<div class="sj-book">
 			<div depth="5" class="hard"> <div class="side"></div> </div>
@@ -81,7 +84,7 @@ function loadApp() {
 
 	$( "#slider" ).slider({
 		min: 1,
-		max: 10,
+		max: 6,
 
 		start: function(event, ui) {
 
