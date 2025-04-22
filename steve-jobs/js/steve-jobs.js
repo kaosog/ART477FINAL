@@ -4,11 +4,13 @@ function updateDepth(book, newPage) {
 
 	var page = book.turn('page'),
 		pages = book.turn('pages'),
-		depthWidth = 16*Math.min(1, page*2/pages);
-
+		depthWidth = 7*Math.min(1, page*2/pages);
+		console.log('p',depthWidth)
+		console.log(page)
+		console.log(pages)
 		newPage = newPage || page;
-
-	if (newPage>3)
+		console.log('x',newPage)
+	if (newPage>4)
 		$('.sj-book .p2 .depth').css({
 			width: depthWidth,
 			left: 20 - depthWidth
@@ -16,15 +18,15 @@ function updateDepth(book, newPage) {
 	else
 		$('.sj-book .p2 .depth').css({width: 0});
 
-		depthWidth = 16*Math.min(1, (pages-page)*2/pages);
-
-	if (newPage<pages-3)
-		$('.sj-book .p111 .depth').css({
+		depthWidth = 7*Math.min(1, (pages-page)*2/pages);
+		console.log('l',depthWidth)
+	if (newPage<pages-4)
+		$('.sj-book .p11 .depth').css({
 			width: depthWidth,
 			right: 20 - depthWidth
 		});
 	else
-		$('.sj-book .p111 .depth').css({width: 0});
+		$('.sj-book .p11 .depth').css({width: 0});
 
 }
 
@@ -193,7 +195,7 @@ function setPreview(view) {
 
 	var previewWidth = 115,
 		previewHeight = 73,
-		previewSrc = 'pages/page1.html',
+		previewSrc = 'pages/preview.jpg',
 		preview = $(_thumbPreview.children(':first')),
 		numPages = (view==1 || view==$('#slider').slider('option', 'max')) ? 1 : 2,
 		width = (numPages==1) ? previewWidth/2 : previewWidth;
