@@ -21,12 +21,12 @@ function updateDepth(book, newPage) {
 		depthWidth = 7*Math.min(1, (pages-page)*2/pages);
 		console.log('l',depthWidth)
 	if (newPage<pages-4)
-		$('.sj-book .p11 .depth').css({
+		$('.sj-book .p13 .depth').css({
 			width: depthWidth,
 			right: 20 - depthWidth
 		});
 	else
-		$('.sj-book .p11 .depth').css({width: 0});
+		$('.sj-book .p13 .depth').css({width: 0});
 
 }
 

@@ -163,8 +163,8 @@
   
   .sj-book .p1,
   .sj-book .p2,
-  .sj-book .p11, 
-  .sj-book .p12{
+  .sj-book .p13, 
+  .sj-book .p14{
 	  background-color:white;
 	  background-image:url(../pics/Frame\ 1.png) !important;
   }
@@ -230,11 +230,11 @@
   }
   
   
-  .sj-book .p11{
+  .sj-book .p13{
 	  background-position:-960px 0 !important;
   }
   
-  .sj-book .p12{
+  .sj-book .p14{
 	  background-position:-1440px 0 !important;
   }
   
