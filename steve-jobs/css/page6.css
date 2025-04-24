@@ -1,0 +1,102 @@
+#schoolH {
+    position: absolute;
+    height:120px;
+    width:300px;
+    top:5px;
+    left:40px;
+    z-index:10;
+    color:#800000;
+}
+
+#schoolp1 {
+    position: absolute;
+    height:220px;
+    width:365px;
+    top:65px;
+    left:55px;
+    z-index:1;
+    color:white
+}
+
+
+#hwhite {
+    position: absolute;
+    height:70px;
+    width:300px;
+    top:5px;
+    left:20px;
+    z-index:1;
+}
+
+#hguard {
+    position: absolute;
+    height:220px;
+    width:180px;
+    bottom:80px;
+    left:20px;
+    z-index:0
+}
+
+#hdunk {
+    position: absolute;
+    height:200px;
+    width:150px;
+    top:20px;
+    right:30px;
+    z-index:0
+}
+
+#hpic {
+    position: absolute;
+    height:160px;
+    width:110px;
+    bottom:140px;
+    right:30px;
+    z-index:1
+}
+
+#hmedal {
+    position: absolute;
+    height:140px;
+    width:180px;
+    bottom:10px;
+    right:40px;
+    z-index:0
+}
+
+#htv {
+    position: absolute;
+    height:150px;
+    width:180px;
+    bottom:190px;
+    left:300px;
+    z-index:0
+}
+
+#hceleb {
+    position: absolute;
+    height:200px;
+    width:170px;
+    bottom:20px;
+    left:180px;
+    z-index:1
+}
+
+#hdog {
+    position: absolute;
+    height:150px;
+    width:150px;
+    bottom:240px;
+    left:200px;
+    z-index:10
+}
+
+#hredwide {
+    position: absolute;
+    height:200px;
+    width:390px;
+    top:50px;
+    left:40px;
+    z-index:0;
+}
+

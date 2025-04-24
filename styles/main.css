@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'CaveatB';
+  src: url('/steve-jobs/CaveatBrush-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caveat';
+  src: url('/steve-jobs/Caveat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1{
+  font-family:'CaveatB';
+  font-size: 3em;
+}
+p{
+  font-family:'Caveat'
+}
 #bothBind{
   position: absolute;
   left: 20%;
@@ -15,7 +34,7 @@
 #leftBind{
   position:absolute;
   top:-10px;
-  left:0px;
+  left:140px;
 }
 /* Reset and base styles
 html, body {

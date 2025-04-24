@@ -1,0 +1,96 @@
+#dad {
+    position: absolute;
+    height:210px;
+    width:270px;
+    bottom:10px;
+    left:-10px;
+    z-index:2
+}
+#yellow {
+    position: absolute;
+    height:120px;
+    width:100px;
+    bottom:260px;
+    left:220px;
+    z-index:0
+}
+#upperdub {
+    position: absolute;
+    height:160px;
+    width:160px;
+    top:20px;
+    right:10px;
+    z-index:0
+}
+#schoolchain {
+    position: absolute;
+    height:160px;
+    width:120px;
+    top:220px;
+    right:20px;
+    z-index:0
+}
+#baby {
+    position: absolute;
+    height:160px;
+    width:130px;
+    bottom:20px;
+    left:185px;
+    z-index:1
+}
+#blackzip {
+    position: absolute;
+    height:210px;
+    width:180px;
+    bottom:200px;
+    left:35px;
+    z-index:0
+}
+#whiteteam {
+    position: absolute;
+    height:140px;
+    width:230px;
+    top:10px;
+    left:210px;
+    z-index:0
+}
+#team {
+    position: absolute;
+    height:160px;
+    width:160px;
+    top:20px;
+    left:50px;
+    z-index:0
+}
+#mid {
+    position: absolute;
+    height:160px;
+    width:130px;
+    bottom:260px;
+    left:320px;
+    z-index:0
+}
+#back3 {
+    position: absolute;
+    height:270px;
+    width:400px;
+    bottom:5px;
+    left:300px;
+    z-index:1
+}
+#child3 {
+    position: absolute;
+    height:160px;
+    width:190px;
+    bottom:80px;
+    left:320px;
+    z-index:10
+}
+#child4 {
+    position: absolute;
+    height:120px;
+    width:85px;
+    bottom:230px;
+    left:225px;
+    z-index:0
+}
