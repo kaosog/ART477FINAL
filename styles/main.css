@@ -36,6 +36,9 @@ p{
   top:-10px;
   left:140px;
 }
+body{
+  background:rgb(109, 109, 109);
+}
 /* Reset and base styles
 html, body {
   height: 100%;
@@ -127,4 +130,4 @@ html, body {
 #page-slider {
   width: 300px;
   margin-right: 15px;
-} */ */ */
+} */
