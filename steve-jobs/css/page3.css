@@ -1,0 +1,17 @@
+#coverphoto{
+    position: absolute;
+    height:220px;
+    width:365px;
+    top:65px;
+    left:130px;
+    z-index:1;
+    color:white
+}
+#coverparagpraph{
+    position: absolute;
+    height:220px;
+    width:365px;
+    top:300px;
+    left:130px;
+    z-index:1;
+}

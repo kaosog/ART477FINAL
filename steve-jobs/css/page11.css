@@ -1,0 +1,99 @@
+#ilong {
+    position: absolute;
+    height: 300px;
+    width: 270px;
+    top: 0px;
+    right: 20px;
+    z-index: 7;
+}
+
+#icoach {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 240px;
+    right: 245px;
+    z-index: 13;
+}
+
+#iblackteam {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    bottom: 160px;
+    right: 180px;
+    z-index: 1;
+}
+
+#ilongih {
+    position: absolute;
+    height: 270px;
+    width: 270px;
+    bottom: 20px;
+    left: 40px;
+    z-index: 2;
+}
+#impactP3{
+    position: absolute;
+    height: 190px;
+    width: 240px;
+    bottom: 60px;
+    left: 50px;
+    z-index: 3;
+    color:white
+}
+#impactP4{
+    position: absolute;
+    height: 300px;
+    width: 240px;
+    top: 0px;
+    right: 35px;
+    z-index: 8;
+    color: white;
+}
+#ifoundation {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 10px;
+    left: 40px;
+    z-index: 3;
+}
+
+#idribble {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 190px;
+    left: 60px;
+    z-index: 1;
+}
+
+#ifist {
+    position: absolute;
+    height: 130px;
+    width: 230px;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+#itutor {
+    position: absolute;
+    height: 100px;
+    width: 180px;
+    bottom: 140px;
+    right: 10px;
+    z-index: 0;
+}
+
+#ibook {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 40px;
+    left: 180px;
+    z-index: 1;
+}
+
+
