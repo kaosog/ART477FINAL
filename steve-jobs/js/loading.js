@@ -3,7 +3,7 @@ const pieces = document.querySelectorAll('.piece');
 const centerX = 150;
 const centerY = 150;
 const startRadius = 800;
-const spinDuration = 500;
+const spinDuration = 500; // or 1000 for a little longer
 
 pieces.forEach((piece, index) => {
     const angleOffset = (index / pieces.length) * 2 * Math.PI;
@@ -27,16 +27,15 @@ pieces.forEach((piece, index) => {
         piece.style.transition = "all 1s ease-in-out";
         piece.style.transform = `translate(0px, 0px) rotate(0deg)`;
 
-        // When last piece finishes, trigger fade and redirect
+        // Once last piece finishes
         if (index === pieces.length - 1) {
             setTimeout(() => {
-                document.body.style.transition = "opacity 1s ease";
-                document.body.style.opacity = 0;
-
+                document.getElementById('fade-overlay').style.opacity = '0';
+                // OPTIONAL: If you want to completely remove it after fade
                 setTimeout(() => {
-                    window.location.href = "../index.html"; // Change to your target page
-                }, 1000); // After fade-out completes
-            }, 1000); // Wait for transition to center
+                    document.getElementById('fade-overlay').style.display = 'none';
+                }, 1000); // After fade is done
+            }, 1000); // wait for pieces to finish centering
         }
     }, spinDuration);
 });

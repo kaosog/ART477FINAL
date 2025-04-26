@@ -41,7 +41,17 @@
 	</div>
 </div>
 
-
+<div id="fade-overlay">
+    <div id="loading-screen">
+        <img src="/images/loading/lefttop.png" class="piece" id="lefttop">
+        <img src="/images/loading/righttop.png" class="piece" id="righttop">
+        <img src="/images/loading/leftbottom.png" class="piece" id="leftbottom">
+        <img src="/images/loading/rightbottom.png" class="piece" id="rightbottom">
+        <img src="/images/loading/bottomleft.png" class="piece" id="bottomleft">
+        <img src="/images/loading/bottomright.png" class="piece" id="bottomright">
+    </div>
+</div>
+<script src="/steve-jobs/js/loading.js"></script>
 <script type="text/javascript">
 
 function loadApp() {
@@ -297,6 +307,8 @@ yepnope({
 	both: ['js/steve-jobs.js', 'css/jquery.ui.css', 'css/steve-jobs.css'],
 	complete: loadApp
 });
+
+
 
 </script>
 

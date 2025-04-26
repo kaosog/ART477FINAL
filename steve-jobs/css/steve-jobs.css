@@ -166,9 +166,16 @@
   .sj-book .p13, 
   .sj-book .p14{
 	  background-color:white;
-	  background-image:url(../pics/test2.png) !important;
+	  background-image:url(../pics/AllblueBack.png) !important;
   }
-  
+  .sj-book .p2{
+	background-color:white;
+	background-image:url(../pics/leftbindback.png) !important;
+  }
+  .sj-book .p13{
+	background-color:white;
+	background-image:url(../pics/rightbindback.png) !important;
+  }
   .sj-book .p1{
 	  background-position:0 0;
   }
