@@ -270,8 +270,8 @@
   }
   
   .sj-book .even{
-	  background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #B9AE8F), color-stop(1, #978e75));
-	  background-image:-webkit-linear-gradient(left, #B9AE8F 95%, #978e75 100%);
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #ffffff), color-stop(1, #c0c0c0));
+	background-image:-webkit-linear-gradient(left, #d4d4d4 95%, #c4c4c4 100%);
 	  background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
 	  background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
 	  background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
@@ -279,8 +279,8 @@
   }
   
   .sj-book .odd{
-	  background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #B9AE8F), color-stop(1, #9c937a));
-	  background-image:-webkit-linear-gradient(right, #B9AE8F 95%, #978e75 100%);
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #ffffff), color-stop(1, #c0c0c0));
+	background-image:-webkit-linear-gradient(left, #d4d4d4 95%, #c4c4c4 100%);
 	  background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
 	  background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
 	  background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);

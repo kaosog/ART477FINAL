@@ -3,10 +3,10 @@
     position: absolute;
     height:300px;
     width:190px;
-    top:5px;
-    right:25px;
+    top:13px;
+    right:20px;
     z-index:1;
-    color:white
+    color:rgb(0, 0, 0)
 }
 
 #schoolp4 {
@@ -20,12 +20,12 @@
 
 #schoolp5{
     position: absolute;
-    height:400px;
-    width:205px;
-    top:5px;
-    left:40px;
+    height:420px;
+    width:190px;
+    top:10px;
+    left:50px;
     z-index:1;
-    color:white
+    color:rgb(0, 0, 0)
 }
 
 #hsw {
@@ -120,9 +120,26 @@
 
 #hredwideish {
     position: absolute;
-    height:300px;
+    height:255px;
     width:225px;
     top:5px;
     right:5px;
+    z-index:0;
+}
+
+#highTall{
+    position: absolute;
+    height:230px;
+    width:207px;
+    top:15px;
+    right:18px;
+    z-index:0;  
+}
+#highTall2{
+    position: absolute;
+    height:300px;
+    width:212px;
+    top:9px;
+    left:35px;
     z-index:0;
 }

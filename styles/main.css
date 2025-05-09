@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'Caveat';
-  src: url('/steve-jobs/Caveat-Regular.ttf') format('truetype');
+  src: url('/steve-jobs/PoynterText-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,8 @@ h1{
   font-size: 3em;
 }
 p{
-  font-family:'Caveat'
+  font-family:'Caveat';
+  font-size:13.5px;
 }
 #bothBind{
   position: absolute;
@@ -132,6 +133,27 @@ html, body {
   transform: translate(0, 0) rotate(0deg);
   will-change: transform;
   z-index: 100000000;
+}
+
+.polaroid {
+  position: relative;
+  border: 10px solid white;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Softer, more natural shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.polaroid img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  transition: transform 0.2s;
 }
 /* Reset and base styles
 html, body {

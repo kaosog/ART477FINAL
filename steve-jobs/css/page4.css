@@ -8,26 +8,7 @@
     z-index:100;
   }
   
-  /* Paragraphs */
-  #childp1 {
-    /* Styles for the first paragraph */
-    position: absolute;
-    height:100px;
-    width:350px;
-    bottom:-10px;
-    right:50px;
-    z-index:10;
-  }
-  
-  #childp2 {
-    /* Styles for the second paragraph */
-    position: absolute;
-    height:220px;
-    width:350px;
-    top:70px;
-    left:15px;
-    z-index:10;
-  }
+
   
   /* Images */
   #headerB {
@@ -40,25 +21,6 @@
     /* Styles for header background image */
   }
   
-  #back1 {
-    /* Styles for background image 1 */
-    position: absolute;
-    height:120px;
-    width:400px;
-    bottom:5px;
-    right:30px;
-    z-index:2
-  }
-  
-  #back2 {
-    /* Styles for background image 2 */
-    position: absolute;
-    height:290px;
-    width:370px;
-    top:70px;
-    left:5px;
-    z-index:0
-  }
   
   #dragon {
     /* Styles for the dragon image */
@@ -75,8 +37,8 @@
     position: absolute;
     height:120px;
     width:120px;
-    bottom:5px;
-    left:5px;
+    bottom:150px;
+    left:180px;
     z-index:1
   }
   
@@ -84,27 +46,27 @@
     /* Styles for blue shirt image */
     position: absolute;
     height:160px;
-    width:160px;
-    bottom:220px;
-    left:200px;
-    z-index:0
+    width:140px;
+    bottom:130px;
+    right:30px;
+    z-index:1
   }
   
   #boots {
     /* Styles for boots image */
     position: absolute;
-    height:160px;
-    width:160px;
-    bottom:200px;
-    left:10px;
+    height:130px;
+    width:130px;
+    bottom:180px;
+    right:160px;
     z-index:1
   }
   #siblings{
     position: absolute;
-    height:160px;
-    width:160px;
-    bottom:150px;
-    left:290px;
+    height:140px;
+    width:140px;
+    top:230px;
+    left:40px;
     z-index:0
   }
   #close {
@@ -112,9 +74,9 @@
     position: absolute;
     height:160px;
     width:160px;
-    bottom:90px;
-    left:120px;
-    z-index:0
+    bottom:10px;
+    left:20px;
+    z-index:1
   }
   
   #purpteam {
@@ -123,17 +85,184 @@
     height:160px;
     width:160px;
     bottom:310px;
-    right:60px;
+    right:50px;
+    z-index:1
   }
   
-  #knights {
-    /* Styles for knights image */
+ 
+  
+
+  /* TEXT */
+  #growingWide{
     position: absolute;
-    height:160px;
-    width:160px;
-    bottom:110px;
-    right:15px;
-    z-index:1;
+    height:100px;
+    width:380px;
+    bottom:15px;
+    right:40px;
+    z-index:5;
+  }
+  #growingWide2{
+    position: absolute;
+    height:120px;
+    width:369px;
+    top:105px;
+    left:10px;
+    z-index:3;
+  }
+
+  #back1 {
+    /* Styles for background image 1 */
+    position: absolute;
+    height:120px;
+    width:400px;
+    bottom:5px;
+    right:30px;
+    z-index:2
   }
   
-  
+  #back2 {
+    /* Styles for background image 2 */
+    position: absolute;
+    height:335px;
+    width:380px;
+    top:90px;
+    left:5px;
+    z-index:2
+  }
+
+    /* Paragraphs */
+    #childp1 {
+      /* Styles for the first paragraph */
+      position: absolute;
+      height:100px;
+      width:350px;
+      bottom:-10px;
+      right:50px;
+      z-index:10;
+    }
+    
+    #childp2 {
+      /* Styles for the second paragraph */
+      position: absolute;
+      height:220px;
+      width:350px;
+      top:100px;
+      left:20px;
+      z-index:10;
+    }
+
+
+    /* Keyframe Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Applying Animations */
+#childH {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+#headerB {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+#dragon {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+#school {
+  animation: slideInBottom 0.9s ease-out forwards;
+}
+
+#blueshirt {
+  animation: slideInRight 1.1s ease-out forwards;
+}
+
+#boots {
+  animation: slideInRight 1.2s ease-out forwards;
+}
+
+#siblings {
+  animation: slideInTop 0.9s ease-out forwards;
+}
+
+#close {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+#purpteam {
+  animation: slideInRight 1.3s ease-out forwards;
+}
+
+#growingWide {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+#growingWide2 {
+  animation: slideInLeft 0.9s ease-out forwards;
+}
+
+#back1 {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+#back2 {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+#childp1 {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+#childp2 {
+  animation: slideInLeft 0.9s ease-out forwards;
+}
+
+/* Delay for a more dynamic staggered effect */
+#headerB, #back1, #blueshirt, #boots, #purpteam {
+  animation-delay: 0.3s;
+}
+
+#school, #siblings, #childp2, #growingWide2 {
+  animation-delay: 0.4s;
+}
