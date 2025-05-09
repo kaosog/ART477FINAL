@@ -10,7 +10,7 @@
     position: absolute;
     height: 0px;
     width: 560px;
-    bottom: 130px;
+    top: 20px;
     left: 200px;
     z-index: 15;
 }
@@ -19,7 +19,7 @@
     position: absolute;
     height: 250px;
     width: 230px;
-    bottom: -90px;
+    top: 50px;
     left: 190px;
     z-index: 1;
 }
@@ -27,17 +27,17 @@
     position: absolute;
     height: 0px;
     width: 560px;
-    bottom: 95px;
+    top: 90px;
     left: 320px;
     z-index: 15;
-    color:rgb(126, 126, 126);
+    color:rgb(0, 0, 0);
     font-size: 20;
 }
 #blackbacksource1{
     position: absolute;
     height: 150px;
     width: 150px;
-    top: 100px;
+    top: 420px;
     left: 90px;
     z-index: 10;
 }
@@ -69,7 +69,7 @@
     position: absolute;
     height: 150px;
     width: 150px;
-    top: 100px;
+    top: 420px;
     left: 350px;
     z-index: 10;
 }
@@ -101,7 +101,7 @@
     position: absolute;
     height: 150px;
     width: 150px;
-    top: 100px;
+    top: 420px;
     left: 110px;
     z-index: 11;
     color:white
@@ -137,7 +137,7 @@
     position: absolute;
     height: 150px;
     width: 150px;
-    top: 100px;
+    top: 420px;
     left: 365px;
     z-index: 11;
     color:white
@@ -168,4 +168,14 @@
     left: 365px;
     z-index: 11;
     color:white
+}
+.tint-overlay{
+    position: absolute;
+    height: 560px;
+    width: 560px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.274); /* Adjust color and opacity */
+    pointer-events: none;
 }
