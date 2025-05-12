@@ -11,11 +11,12 @@
 
 #schoolp4 {
     position: absolute;
-    height:175px;
+    height:155px;
     width:110px;
     bottom:0px;
     right:20px;
     z-index:1;
+    font-size:13px;
 }
 
 #schoolp5{
@@ -30,7 +31,7 @@
 
 #hsw {
     position: absolute;
-    height:190px;
+    height:170px;
     width:130px;
     bottom:10px;
     right:10px;
@@ -142,4 +143,36 @@
     top:9px;
     left:35px;
     z-index:0;
+}
+
+#achiev3{
+    position: absolute;
+    bottom:120px;
+    left:210px;
+    height:120px;
+    width:140px;
+    z-index:10;
+    opacity: 0;
+    animation: spinIn 1s ease-out 1.4s forwards;
+}
+#achiev4{
+    position: absolute;
+    opacity: 0;
+    top:100px;
+    right:220px;
+    height:140px;
+    width:140px;
+    z-index:10;
+    animation: spinIn 1s ease-out 1.6s forwards;
+}
+
+@keyframes spinIn {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(-360deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
 }
