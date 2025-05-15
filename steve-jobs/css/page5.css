@@ -129,9 +129,9 @@
   }
 #back3 {
     position: absolute;
-    height:270px;
-    width:410px;
-    bottom:180px;
+    height:295px;
+    width:420px;
+    bottom:165px;
     left:225px;
     z-index:1
 }
@@ -140,15 +140,15 @@
     height:160px;
     width:190px;
     bottom:260px;
-    left:260px;
+    left:255px;
     z-index:10
 }
 
 #growingTall{
     position: absolute;
-    height:240px;
-    width:220px;
-    bottom:200px;
+    height:270px;
+    width:225px;
+    bottom:182px;
     left:230px;
     z-index:1
 }

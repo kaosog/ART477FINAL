@@ -6,6 +6,7 @@
     top:10px;
     left:160px;
     z-index:100;
+    color:white
   }
   
 
@@ -85,7 +86,7 @@
     height:160px;
     width:160px;
     bottom:310px;
-    right:50px;
+    right:35px;
     z-index:1
   }
   
@@ -101,11 +102,21 @@
     right:40px;
     z-index:5;
   }
+    
+  #back2 {
+    /* Styles for background image 2 */
+    position: absolute;
+    height:362px;
+    width:395px;
+    top:85px;
+    left:5px;
+    z-index:2
+  }
   #growingWide2{
     position: absolute;
-    height:120px;
-    width:369px;
-    top:105px;
+    height:140px;
+    width:380px;
+    top:95px;
     left:10px;
     z-index:3;
   }
@@ -119,16 +130,7 @@
     right:30px;
     z-index:2
   }
-  
-  #back2 {
-    /* Styles for background image 2 */
-    position: absolute;
-    height:335px;
-    width:380px;
-    top:90px;
-    left:5px;
-    z-index:2
-  }
+
 
     /* Paragraphs */
     #childp1 {
@@ -147,7 +149,7 @@
       height:220px;
       width:350px;
       top:100px;
-      left:20px;
+      left:25px;
       z-index:10;
     }
 

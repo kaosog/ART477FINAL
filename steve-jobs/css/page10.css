@@ -17,16 +17,7 @@
     color: #FFD700;
 }
 
-#impactP1{
-    position: absolute;
-    height: 10px;
-    width: 1060px;
-    bottom: 20px;
-    left: 200px;
-    z-index: 3;
-    color: white;
-    font-size: 20px;
-}
+
 
 #iwing {
     position: absolute;
@@ -110,9 +101,9 @@
 
 #highTall5{
     position: absolute;
-    height: 282px;
-    width: 300px;
-    bottom: 20px;
+    height: 300px;
+    width: 315px;
+    bottom: 15px;
     right: 37px;
     z-index: 3;
     color:white;
@@ -121,18 +112,28 @@
     position: absolute;
     height: 260px;
     width: 270px;
-    bottom: 15px;
-    right: 49px;
+    bottom: 25px;
+    right: 57px;
     z-index: 4;
     color:rgb(3, 3, 3);
 }
 #iwidishback {
     position: absolute;
-    height: 460px;
-    width: 320px;
-    bottom: -140px;
+    height: 470px;
+    width: 330px;
+    bottom: -145px;
     right: 28px;
     z-index: 3;
 
 }
 
+#impactP1{
+    position: absolute;
+    height: 10px;
+    width: 1060px;
+    bottom: 20px;
+    left: 200px;
+    z-index: 3;
+    color: white;
+    font-size: 20px;
+}
